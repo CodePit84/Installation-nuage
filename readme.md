@@ -54,7 +54,7 @@ Donc sur votre terminal, vous tapez :
 ```ssh debian@xxx.xxx.xxx.xxx```
 remplacer les xxx par votre ip publique !
 
-![ssh_debian](https://github.com/CodePit84/Installation-nuage/blob/main/Capture%20d%E2%80%99%C3%A9cran%20du%202023-02-15%2010-35-49.png)
+![ssh_debian](https://github.com/CodePit84/Installation-nuage/blob/main/ssh2.png)
 Répondre yes à la question "Are you sure you want to continue connecting (yes/no/[fingerprint])?"
 
 Désormais pour vous connecter utiliser la commande ```ssh debian@xxx.xxx.xxx.xxx``` pour vous connectez au terminal de votre serveur distant.
