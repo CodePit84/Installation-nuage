@@ -24,4 +24,25 @@ Puis Aller dans "Groupes de sécurité" (en bas) et cliquer sur "Assigner des in
 
 ![instance](https://github.com/CodePit84/Installation-nuage/blob/main/Capture%20d%E2%80%99%C3%A9cran%20du%202023-02-14%2013-58-07.png)
 
+Dans votre terminal, au niveau de votre dossier .ssh
+Tapez : 
+```nano config```
+
+![nano_config](https://github.com/CodePit84/Installation-nuage/blob/main/Capture%20d%E2%80%99%C3%A9cran%20du%202023-02-15%2010-27-34.png)
+
+et on met ceci : 
+
+![config](https://github.com/CodePit84/Installation-nuage/blob/main/Capture%20d%E2%80%99%C3%A9cran%20du%202023-02-14%2014-20-04.png)
+
+donc votre ip publique après Host et vous commenté UseKeychain no !
+
+ensuite sur votre terminal, vous tapez :
+```ssh debian@xxx.xxx.xxx.xxx```
+remplacer les xxx par votre ip publique !
+
+![ssh_debian](https://github.com/CodePit84/Installation-nuage/blob/main/Capture%20d%E2%80%99%C3%A9cran%20du%202023-02-15%2010-35-49.png)
+Répondre yes à la question "Are you sure you want to continue connecting (yes/no/[fingerprint])?"
+
+Désormais pour vous connecter utiliser la commande ```ssh debian@xxx.xxx.xxx.xxx``` pour vous connectez au terminal de votre serveur distant !
+
 
