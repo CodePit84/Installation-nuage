@@ -59,7 +59,7 @@ Répondre yes à la question "Are you sure you want to continue connecting (yes/
 
 Désormais pour vous connecter utiliser la commande ```ssh debian@xxx.xxx.xxx.xxx``` pour vous connectez au terminal de votre serveur distant.
 
-/// Copié/collé de Guillaume à partir de là : ///
+/// Copié/collé de Guillaume à partir de là : /!\ Mais Ajout de l'installation de MYSQL à la fin de l'installation de base !! ///
 
 ### Installation de base
 
@@ -117,7 +117,13 @@ sudo apt-get install -y postgresql postgresql-contrib
 # On installe Node et NPM
 curl -sL https://deb.nodesource.com/setup_16.x -o nodesource_setup.sh 
 sudo bash nodesource_setup.sh 
-sudo apt install nodejs 
+sudo apt install nodejs
+
+# On installe MySQL
+wget https://dev.mysql.com/get/mysql-apt-config_0.8.22-1_all.deb
+sudo apt install ./mysql-apt-config_0.8.22-1_all.deb
+sudo apt update
+sudo apt install mysql-server
 
 ```
 
@@ -377,9 +383,3 @@ Dans mon cas : [http://164.92.137.13/](http://164.92.137.13/)
 <hr>
 
 Première partie : [La création de l'application](https://github.com/lozit/Exercices-Webdev/blob/main/modules/Symfony/Simplecrud.md)
-La suite :  CI/CD (A venir)
-
-
-
-
-
