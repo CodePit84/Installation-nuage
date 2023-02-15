@@ -59,6 +59,8 @@ Répondre yes à la question "Are you sure you want to continue connecting (yes/
 
 Désormais pour vous connecter utiliser la commande ```ssh debian@xxx.xxx.xxx.xxx``` pour vous connectez au terminal de votre serveur distant.
 
+/// Copié/collé de Guillaume à partir de là : ///
+
 ### Installation de base
 
 On se connecte sur la droplet en SSH.
@@ -149,7 +151,7 @@ Il faudra ensuite configurer le serveur web. Nous utilisons Nginx.
 
 Nginx possède deux dossiers :
 
-- `/etc/nginx/sites-availlable/` qui correspond aux sites disponibles
+- `/etc/nginx/sites-available/` qui correspond aux sites disponibles
 - `/etc/nginx/sites-enabled/` qui correspond aux sites activés
 
 Sites disponibles : la configuration est là, mais le site n'est pas en ligne
@@ -160,7 +162,7 @@ Dans le second, on va créer des lien symboliques (avec `ln -s`) vers les sites 
 
 Il existe une configuration officielle pour configurer un site Symfony sur Nginx : [https://symfony.com/doc/current/setup/web_server_configuration.html#nginx](https://symfony.com/doc/current/setup/web_server_configuration.html#nginx)
 
-Nous allons donc créer un fichier dans le dossier `sites-availlable` : `nano /etc/nginx/sites-availlable/monprojettest` dans lequel vous allez collez la [configuration officielle](https://symfony.com/doc/current/setup/web_server_configuration.html#nginx).
+Nous allons donc créer un fichier dans le dossier `sites-available` : `nano /etc/nginx/sites-availlable/monprojettest` dans lequel vous allez collez la [configuration officielle](https://symfony.com/doc/current/setup/web_server_configuration.html#nginx).
 
 Nous allons changer trois choses :
 
@@ -169,7 +171,7 @@ Dans Symfony, c'est bien le projet public qu'il faut pointer
 - Nous allons commenter la ligne `server_name` car nous n'avons pas encore de nom de domaine configuré.
 - Nous allons mettre le bon chemin vers PHP : attribut `fastcgi_pass` dont nous allons changer la version de 7.4 à 8.1.
 
-Celà nous donne un fichier `/etc/nginx/sites-availlable/monprojettest` comme ceci :
+Celà nous donne un fichier `/etc/nginx/sites-available/monprojettest` comme ceci :
 
 ```BASH
 
@@ -374,7 +376,7 @@ Dans mon cas : [http://164.92.137.13/](http://164.92.137.13/)
 
 <hr>
 
-Première partie : [La création de l'application](./Simplecrud.md)
+Première partie : [La création de l'application](https://github.com/lozit/Exercices-Webdev/blob/main/modules/Symfony/Simplecrud.md)
 La suite :  CI/CD (A venir)
 
 
