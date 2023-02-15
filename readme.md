@@ -18,6 +18,10 @@ Et créer l'instance !
 
 Assurer vous que l'instance soit en "vert"
 
+![instance](https://github.com/CodePit84/Installation-nuage/blob/main/Capture%20d%E2%80%99%C3%A9cran%20du%202023-02-14%2013-57-24.png)
+
 Puis Aller dans "Groupes de sécurité" (en bas) et cliquer sur "Assigner des instances" de "Autoriser tout le trafic depuis Internet"
 
-![clé_ssh](https://github.com/CodePit84/Installation-nuage/blob/main/cle_ssh.jpg)
+![instance](https://github.com/CodePit84/Installation-nuage/blob/main/Capture%20d%E2%80%99%C3%A9cran%20du%202023-02-14%2013-58-07.png)
+
+
