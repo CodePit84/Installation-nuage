@@ -50,6 +50,10 @@ donc votre ip publique après Host et vous commenté UseKeychain no !
 
 Une fois votre Machine Virtuelle crée, vous pouvez y accéder en faisant la commande `ssh debian@xxx.xxx.xxx.xxx` les xxx étant l'adresse ip publique de votre machine virtuelle.
 
+Pour avoir cette url cliqez simplement sur :
+
+![configclickssh](https://github.com/CodePit84/Installation-nuage/blob/main/ssh%20click%20nuage.jpg)
+
 Donc sur votre terminal, vous tapez :
 ```ssh debian@xxx.xxx.xxx.xxx```
 remplacer les xxx par votre ip publique !
