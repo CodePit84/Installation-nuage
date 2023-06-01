@@ -360,6 +360,27 @@ cd /var/www
 git clone git@gitlab.com:lozit/simplecrud.git
 cd simplecrud 
 ```
+si erreur : 
+```
+Cloning into 'bibliotheque'...
+The authenticity of host 'github.com (140.82.121.4)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,140.82.121.4' (ECDSA) to the list of known hosts.
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0644 for '/home/debian/.ssh/bibliotheque' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+Load key "/home/debian/.ssh/bibliotheque": bad permissions
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+``` 
+Il faut aller dans le dossier .ssh du serveur et s'assurer que vous avez copié corectement la clé PRIVÉE et limité les permissions de ce fichier :
+``` 
+chmod 600 monprojet
+``` 
 
 On crée un fichier .env.local `nano .env.local` dans lequel on mets la connection avec la base de données et dans lequel on dit qu'on est sur une version de production :
 
