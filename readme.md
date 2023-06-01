@@ -241,7 +241,7 @@ server {
 
 ```
 
-Ensuite, nous supprimons le lien symbolique dans `site-enabled`et nous en créons un vers notre fichier `monprojettest`
+Ensuite, nous supprimons le lien symbolique dans `sites-enabled`et nous en créons un vers notre fichier `monprojettest`
 
 ```BASH
 
