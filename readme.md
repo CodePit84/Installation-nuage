@@ -111,7 +111,7 @@ sudo mv composer.phar /usr/local/bin/composer
 curl -1sLf 'https://dl.cloudsmith.io/public/symfony/stable/setup.deb.sh' | sudo -E bash
 sudo apt-get install -y symfony-cli
 
-# On configure GIT
+# On configure GIT (* pour avoir ces infos ouvrez un nouveau terminal sur votre ordinateur (pas serveur) et tapez : ```git config --list --show-origin```)
 git config --global user.email "you@example.com"
 git config --global user.name "Votre Nom"
 
