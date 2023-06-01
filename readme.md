@@ -172,7 +172,7 @@ Dans le second, on va créer des lien symboliques (avec `ln -s`) vers les sites 
 
 Il existe une configuration officielle pour configurer un site Symfony sur Nginx : [https://symfony.com/doc/current/setup/web_server_configuration.html#nginx](https://symfony.com/doc/current/setup/web_server_configuration.html#nginx)
 
-Nous allons donc créer un fichier dans le dossier `sites-available` : `nano /etc/nginx/sites-availlable/monprojettest` dans lequel vous allez collez la [configuration officielle](https://symfony.com/doc/current/setup/web_server_configuration.html#nginx).
+Nous allons donc créer un fichier dans le dossier `sites-available` : `nano /etc/nginx/sites-available/monprojettest` dans lequel vous allez collez la [configuration officielle](https://symfony.com/doc/current/setup/web_server_configuration.html#nginx).
 
 Nous allons changer trois choses :
 
